@@ -1,0 +1,7 @@
+select
+'/// <summary><ReplaceWithBr>' + 
+'/// ' + <ColumnName> + '<ReplaceWithBr>' +
+'/// </summary>' +'<ReplaceWithBr>' + 
+REPLACE(<ColumnName>, ' ', '') + ' = ' + CAST(<CoumnId> AS VARCHAR(10)) + 
+',<ReplaceWithBr>' 
+from <TableName>
